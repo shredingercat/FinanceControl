@@ -1,6 +1,5 @@
 package model;
 import java.util.Date;
-import java.util.List;
 
 
 /**
@@ -14,17 +13,9 @@ class Transaction {
   //
 
   /**
-   * Account of transaction
-   */
-  private model.BaseAccount account;
-  /**
    * Contragent of transaction
    */
   private model.Contragent cortragent;
-  /**
-   * Currency of transaction
-   */
-  private model.Currency currency;
   /**
    * date of operation
    */
@@ -36,8 +27,11 @@ class Transaction {
   /**
    * List of splitting
    */
-
-  private List<Split> splitting;
+  private java.util.List<model.Split> splitting;
+  /**
+   * Income saldo of account
+   */
+  private float incomeSaldo = .0f;
   
   //
   // Constructors
@@ -52,24 +46,6 @@ class Transaction {
   //
   // Accessor methods
   //
-
-  /**
-   * Set the value of account
-   * Account of transaction
-   * @param newVar the new value of account
-   */
-  private void setAccount (model.BaseAccount newVar) {
-    account = newVar;
-  }
-
-  /**
-   * Get the value of account
-   * Account of transaction
-   * @return the value of account
-   */
-  private model.BaseAccount getAccount () {
-    return account;
-  }
 
   /**
    * Set the value of cortragent
@@ -87,24 +63,6 @@ class Transaction {
    */
   private model.Contragent getCortragent () {
     return cortragent;
-  }
-
-  /**
-   * Set the value of currency
-   * Currency of transaction
-   * @param newVar the new value of currency
-   */
-  private void setCurrency (model.Currency newVar) {
-    currency = newVar;
-  }
-
-  /**
-   * Get the value of currency
-   * Currency of transaction
-   * @return the value of currency
-   */
-  private model.Currency getCurrency () {
-    return currency;
   }
 
   /**
@@ -148,7 +106,7 @@ class Transaction {
    * List of splitting
    * @param newVar the new value of splitting
    */
-  private void setSplitting (List<model.Split> newVar) {
+  private void setSplitting (java.util.List<model.Split> newVar) {
     splitting = newVar;
   }
 
@@ -157,8 +115,26 @@ class Transaction {
    * List of splitting
    * @return the value of splitting
    */
-  private List<model.Split> getSplitting () {
+  private java.util.List<model.Split> getSplitting () {
     return splitting;
+  }
+
+  /**
+   * Set the value of incomeSaldo
+   * Income saldo of account
+   * @param newVar the new value of incomeSaldo
+   */
+  private void setIncomeSaldo (float newVar) {
+    incomeSaldo = newVar;
+  }
+
+  /**
+   * Get the value of incomeSaldo
+   * Income saldo of account
+   * @return the value of incomeSaldo
+   */
+  private float getIncomeSaldo () {
+    return incomeSaldo;
   }
 
   //

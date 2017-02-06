@@ -18,7 +18,19 @@ public class Split {
   /**
    * sum of split
    */
-  private float sum = 0;
+  private float sum = 0.0f;
+  /**
+   * Currency of split
+   */
+  private model.Currency currency;
+  /**
+   * account of split
+   */
+  private model.BaseAccount account;
+  /**
+   * Comment of operation
+   */
+  private String comment;
   
   //
   // Constructors
@@ -68,6 +80,60 @@ public class Split {
    */
   private float getSum () {
     return sum;
+  }
+
+  /**
+   * Set the value of currency
+   * Currency of split
+   * @param newVar the new value of currency
+   */
+  private void setCurrency (model.Currency newVar) {
+    currency = newVar;
+  }
+
+  /**
+   * Get the value of currency
+   * Currency of split
+   * @return the value of currency
+   */
+  private model.Currency getCurrency () {
+    return currency;
+  }
+
+  /**
+   * Set the value of account
+   * account of split
+   * @param newVar the new value of account
+   */
+  private void setAccount (model.BaseAccount newVar) {
+    account = newVar;
+  }
+
+  /**
+   * Get the value of account
+   * account of split
+   * @return the value of account
+   */
+  private model.BaseAccount getAccount () {
+    return account;
+  }
+
+  /**
+   * Set the value of comment
+   * Comment of operation
+   * @param newVar the new value of comment
+   */
+  private void setComment (String newVar) {
+    comment = newVar;
+  }
+
+  /**
+   * Get the value of comment
+   * Comment of operation
+   * @return the value of comment
+   */
+  private String getComment () {
+    return comment;
   }
 
   //

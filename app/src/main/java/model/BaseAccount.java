@@ -35,6 +35,10 @@ abstract public class BaseAccount {
    * Closed/opened state of account
    */
   private boolean isClosed = false;
+  /**
+   * Owener of account
+   */
+  private model.User user;
   
   //
   // Constructors
@@ -89,7 +93,7 @@ abstract public class BaseAccount {
    * Account balance
    * @param newVar the new value of balance
    */
-  private void setBalance (Float newVar) {
+  private void setBalance (float newVar) {
     balance = newVar;
   }
 
@@ -98,7 +102,7 @@ abstract public class BaseAccount {
    * Account balance
    * @return the value of balance
    */
-  private Float getBalance () {
+  private float getBalance () {
     return balance;
   }
 
@@ -172,6 +176,24 @@ abstract public class BaseAccount {
    */
   private boolean getIsClosed () {
     return isClosed;
+  }
+
+  /**
+   * Set the value of user
+   * Owener of account
+   * @param newVar the new value of user
+   */
+  private void setUser (model.User newVar) {
+    user = newVar;
+  }
+
+  /**
+   * Get the value of user
+   * Owener of account
+   * @return the value of user
+   */
+  private model.User getUser () {
+    return user;
   }
 
   //

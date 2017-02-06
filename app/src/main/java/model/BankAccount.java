@@ -18,6 +18,10 @@ public class BankAccount extends BaseAccount {
    * Rule of this account
    */
   private model.AccountRule accountRule;
+  /**
+   * Account using for treatment of interests sum
+   */
+  private model.BankAccount interestAccount;
   
   //
   // Constructors
@@ -67,6 +71,24 @@ public class BankAccount extends BaseAccount {
    */
   private model.AccountRule getAccountRule () {
     return accountRule;
+  }
+
+  /**
+   * Set the value of interestAccount
+   * Account using for treatment of interests sum
+   * @param newVar the new value of interestAccount
+   */
+  private void setInterestAccount (model.BankAccount newVar) {
+    interestAccount = newVar;
+  }
+
+  /**
+   * Get the value of interestAccount
+   * Account using for treatment of interests sum
+   * @return the value of interestAccount
+   */
+  private model.BankAccount getInterestAccount () {
+    return interestAccount;
   }
 
   //
