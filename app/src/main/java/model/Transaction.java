@@ -6,7 +6,7 @@ import java.util.Date;
  * Class Transaction
  * Transaction class
  */
-class Transaction {
+class Transaction extends Entity {
 
   //
   // Fields
@@ -32,6 +32,14 @@ class Transaction {
    * Income saldo of account
    */
   private float incomeSaldo = .0f;
+  /**
+   * Sum of transaction
+   */
+  private float sum = 0.0f;
+  /**
+   * Currency of transaction sum
+   */
+  private model.Currency currency;
   
   //
   // Constructors
@@ -135,6 +143,42 @@ class Transaction {
    */
   private float getIncomeSaldo () {
     return incomeSaldo;
+  }
+
+  /**
+   * Set the value of sum
+   * Sum of transaction
+   * @param newVar the new value of sum
+   */
+  private void setSum (float newVar) {
+    sum = newVar;
+  }
+
+  /**
+   * Get the value of sum
+   * Sum of transaction
+   * @return the value of sum
+   */
+  private float getSum () {
+    return sum;
+  }
+
+  /**
+   * Set the value of currency
+   * Currency of transaction sum
+   * @param newVar the new value of currency
+   */
+  private void setCurrency (model.Currency newVar) {
+    currency = newVar;
+  }
+
+  /**
+   * Get the value of currency
+   * Currency of transaction sum
+   * @return the value of currency
+   */
+  private model.Currency getCurrency () {
+    return currency;
   }
 
   //

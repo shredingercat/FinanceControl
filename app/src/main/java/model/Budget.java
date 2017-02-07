@@ -5,20 +5,20 @@ package model;
  * Class Budget
  * Budget for watching spends and manage it
  */
-public class Budget {
+public class Budget extends BaseAccount{
 
   //
   // Fields
   //
 
   /**
-   * Category limitition
+   * Kind of butget
    */
-  private model.Category category;
+  private model.ButgetKinds kind;
   /**
-   * Sum of limit
+   * Limit of spending / Sum of accumulate
    */
-  private float sum = .0f;
+  private float limit = .0f;
   
   //
   // Constructors
@@ -35,39 +35,39 @@ public class Budget {
   //
 
   /**
-   * Set the value of category
-   * Category limitition
-   * @param newVar the new value of category
+   * Set the value of kind
+   * Kind of butget
+   * @param newVar the new value of kind
    */
-  private void setCategory (model.Category newVar) {
-    category = newVar;
+  private void setKind (model.ButgetKinds newVar) {
+    kind = newVar;
   }
 
   /**
-   * Get the value of category
-   * Category limitition
-   * @return the value of category
+   * Get the value of kind
+   * Kind of butget
+   * @return the value of kind
    */
-  private model.Category getCategory () {
-    return category;
+  private model.ButgetKinds getKind () {
+    return kind;
   }
 
   /**
-   * Set the value of sum
-   * Sum of limit
-   * @param newVar the new value of sum
+   * Set the value of limit
+   * Limit of spending / Sum of accumulate
+   * @param newVar the new value of limit
    */
-  private void setSum (float newVar) {
-    sum = newVar;
+  private void setLimit (float newVar) {
+    limit = newVar;
   }
 
   /**
-   * Get the value of sum
-   * Sum of limit
-   * @return the value of sum
+   * Get the value of limit
+   * Limit of spending / Sum of accumulate
+   * @return the value of limit
    */
-  private float getSum () {
-    return sum;
+  private float getLimit () {
+    return limit;
   }
 
   //

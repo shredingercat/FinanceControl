@@ -5,7 +5,7 @@ package model;
  * Class Currency
  * Currency class
  */
-public class Currency {
+public class Currency extends Entity {
 
   //
   // Fields

@@ -5,7 +5,7 @@ package model;
  * Class Category
  * Category class
  */
-public class Category {
+public class Category extends Entity {
 
   //
   // Fields

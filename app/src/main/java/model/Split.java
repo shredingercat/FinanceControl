@@ -5,7 +5,7 @@ package model;
  * Class Split
  * Splittind transaction on categories
  */
-public class Split {
+public class Split extends Entity {
 
   //
   // Fields
@@ -31,6 +31,10 @@ public class Split {
    * Comment of operation
    */
   private String comment;
+  /**
+   * Parent
+   */
+  private model.Transaction parentTransaction;
   
   //
   // Constructors
@@ -134,6 +138,24 @@ public class Split {
    */
   private String getComment () {
     return comment;
+  }
+
+  /**
+   * Set the value of parentTransaction
+   * Parent
+   * @param newVar the new value of parentTransaction
+   */
+  private void setParentTransaction (model.Transaction newVar) {
+    parentTransaction = newVar;
+  }
+
+  /**
+   * Get the value of parentTransaction
+   * Parent
+   * @return the value of parentTransaction
+   */
+  private model.Transaction getParentTransaction () {
+    return parentTransaction;
   }
 
   //

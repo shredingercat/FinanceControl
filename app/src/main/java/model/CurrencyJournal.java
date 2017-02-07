@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Class CurrencyJournal
  */
-public class CurrencyJournal {
+public class CurrencyJournal extends Entity {
 
   //
   // Fields

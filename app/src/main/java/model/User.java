@@ -4,12 +4,16 @@ package model;
 /**
  * Class User
  */
-public class User {
+public class User extends Entity {
 
   //
   // Fields
   //
 
+  /**
+   * Users of program
+   */
+  static private java.util.List<model.User> users;
   /**
    * Nickname of user
    */
@@ -36,6 +40,15 @@ public class User {
   //
   // Accessor methods
   //
+
+  /**
+   * Get the value of users
+   * Users of program
+   * @return the value of users
+   */
+  private java.util.List<model.User> getUsers () {
+    return users;
+  }
 
   /**
    * Set the value of nickname

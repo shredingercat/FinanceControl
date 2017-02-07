@@ -23,6 +23,14 @@ public class AccountRule {
    * Interest rate of account soldo
    */
   private float interestRate = .0f;
+  /**
+   * Subaccount of interest state
+   */
+  private model.BaseAccount interestAccount;
+  /**
+   * Count of days of grace period
+   */
+  private int gracePeriodDays = 0;
   
   //
   // Constructors
@@ -90,6 +98,42 @@ public class AccountRule {
    */
   private float getInterestRate () {
     return interestRate;
+  }
+
+  /**
+   * Set the value of interestAccount
+   * Subaccount of interest state
+   * @param newVar the new value of interestAccount
+   */
+  private void setInterestAccount (model.BaseAccount newVar) {
+    interestAccount = newVar;
+  }
+
+  /**
+   * Get the value of interestAccount
+   * Subaccount of interest state
+   * @return the value of interestAccount
+   */
+  private model.BaseAccount getInterestAccount () {
+    return interestAccount;
+  }
+
+  /**
+   * Set the value of gracePeriodDays
+   * Count of days of grace period
+   * @param newVar the new value of gracePeriodDays
+   */
+  private void setGracePeriodDays (int newVar) {
+    gracePeriodDays = newVar;
+  }
+
+  /**
+   * Get the value of gracePeriodDays
+   * Count of days of grace period
+   * @return the value of gracePeriodDays
+   */
+  private int getGracePeriodDays () {
+    return gracePeriodDays;
   }
 
   //

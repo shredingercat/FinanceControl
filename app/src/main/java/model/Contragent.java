@@ -4,7 +4,7 @@ package model;
 /**
  * Class Contragent
  */
-public class Contragent {
+public class Contragent extends Entity {
 
   //
   // Fields

@@ -4,7 +4,7 @@ package model;
 /**
  * Class BaseAccount
  */
-abstract public class BaseAccount {
+abstract public class BaseAccount extends Entity {
 
   //
   // Fields
