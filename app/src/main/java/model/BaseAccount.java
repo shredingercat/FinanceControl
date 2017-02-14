@@ -12,7 +12,7 @@ abstract public class BaseAccount extends Entity {
 
   private String name;
   /**
-   * ??????
+   * Currency
    */
   private model.Currency currency;
   /**
@@ -72,7 +72,7 @@ abstract public class BaseAccount extends Entity {
 
   /**
    * Set the value of currency
-   * ??????
+   * ������
    * @param newVar the new value of currency
    */
   private void setCurrency (model.Currency newVar) {
@@ -81,7 +81,7 @@ abstract public class BaseAccount extends Entity {
 
   /**
    * Get the value of currency
-   * ??????
+   * ������
    * @return the value of currency
    */
   private model.Currency getCurrency () {

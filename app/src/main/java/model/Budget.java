@@ -5,7 +5,7 @@ package model;
  * Class Budget
  * Budget for watching spends and manage it
  */
-public class Budget extends BaseAccount{
+public class Budget extends BaseAccount {
 
   //
   // Fields

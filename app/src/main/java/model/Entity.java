@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Class Entity
  */
-public abstract class Entity {
+abstract public class Entity {
 
   //
   // Fields
@@ -52,5 +52,26 @@ public abstract class Entity {
   //
   // Other methods
   //
+
+  /**
+   * Clone object
+   * @return       model.Entity
+   */
+  public model.Entity clone()
+  {
+    model.Entity clone = null;
+
+    return clone;
+  }
+
+
+  /**
+   * @return       UUID
+   */
+  private static UUID generateUUID()
+  {
+    return UUID.randomUUID();
+  }
+
 
 }
